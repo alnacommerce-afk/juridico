@@ -1,0 +1,26 @@
+{
+  "numero": "1234567-33.2026.8.05.0001",
+  "tribunal": "TJBA",
+  "grau": "JE",
+  "classe": "Procedimento do Juizado Especial Civel",
+  "orgao": "Vara Sintetica",
+  "ajuizamento": "2026-01-02T00:00:00",
+  "assuntos": [
+    "Indenizacao"
+  ],
+  "fonte": "DataJud/tjba",
+  "movimentos": [
+    {
+      "codigo": 26,
+      "nome": "Distribuicao",
+      "dataHora": "2026-01-02T10:00:00",
+      "complementos": []
+    },
+    {
+      "codigo": 123,
+      "nome": "Expedida carta de citacao",
+      "dataHora": "2026-01-05T10:00:00",
+      "complementos": []
+    }
+  ]
+}

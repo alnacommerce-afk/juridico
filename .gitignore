@@ -1,0 +1,33 @@
+# Dados locais e sensiveis (NUNCA versionar)
+data/
+.env
+.env.*
+*.pem
+*.key
+secrets/
+credenciais*
+# Autos, documentos e relatorios reais
+downloads/
+autos/
+*.pdf
+*.docx
+relatorios/
+reports/
+# Perfis de navegador / sessoes
+browser-profile/
+.playwright/
+playwright-profile/
+*.sqlite
+*.db
+# Logs
+logs/
+*.log
+# Config real (somente os .example.json sao versionados)
+config/empresas.json
+config/processos.json
+# Python / SO
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+Thumbs.db

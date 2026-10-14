@@ -1,0 +1,22 @@
+{
+  "_aviso": "MODELO SEM DADOS REAIS. Copie para data/empresas.json (ignorado pelo Git) e preencha.",
+  "empresas": [
+    {
+      "id": "empresa-exemplo",
+      "razao_social": "EMPRESA EXEMPLO LTDA",
+      "nome_fantasia": "Exemplo",
+      "cnpj": "00.000.000/0001-00",
+      "nomes_anteriores": [],
+      "marcas": [],
+      "filiais": [{"cnpj": "00.000.000/0002-00", "cidade": "Cidade/UF"}],
+      "enderecos": [],
+      "empresas_relacionadas": [],
+      "aliases_busca": [],
+      "processos_conhecidos": [
+        {"numero": "0000000-00.0000.8.00.0000", "tribunal": "TJXX", "sistema": "PJe", "qualificacao": "re"}
+      ],
+      "advogados": [{"nome": "", "contato": ""}]
+    }
+  ],
+  "partes_terceiras_nao_vinculadas": ["Nome de parte contraria ou plataforma que NAO integra o grupo"]
+}

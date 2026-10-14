@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1001",
+    "numero": "9999999-99.2026.8.26.0001",
+    "tribunal": "TJSP",
+    "orgao": "Vara Sintetica",
+    "tipo": "Intimação",
+    "classe": "Procedimento Comum",
+    "disponibilizacao": "2026-01-14",
+    "texto": "Texto sintetico de intimacao para EMPRESA SINTETICA LTDA.",
+    "link": "https://comunica.pje.jus.br/"
+  },
+  {
+    "id": "1002",
+    "numero": "1234567-33.2026.8.05.0001",
+    "tribunal": "TJBA",
+    "orgao": "Vara Sintetica",
+    "tipo": "Edital",
+    "classe": "JEC",
+    "disponibilizacao": "2026-01-14",
+    "texto": "Sintetico.",
+    "link": "https://comunica.pje.jus.br/"
+  }
+]
