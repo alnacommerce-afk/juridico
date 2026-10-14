@@ -8,7 +8,7 @@
 ## Configuração
 1. `copy config\empresas.example.json data\empresas.json` e preencher (razão social, CNPJ, aliases, processos conhecidos). Esse arquivo é ignorado pelo Git.
 2. DataJud: obter a chave pública na wiki do CNJ e definir `DATAJUD_API_KEY` (variável de ambiente do usuário: `setx DATAJUD_API_KEY "<chave>"`). Sem ela a fonte aparece como "NÃO CONFIGURADA".
-3. Opcional (verificação de portais): `pip install playwright` e `playwright install chromium`.
+3. Playwright (Microsoft; instalado nesta máquina, v1.64, `python -m playwright ...`): `pip install playwright` e `python -m playwright install chromium`. Usado para abrir portais e ler páginas; ao encontrar CAPTCHA/login (ex.: consulta pública do Projudi/TJBA, CAPTCHA deslizante) **para e pede intervenção humana** — não contorna.
 4. Testar sem instalar: `powershell -ExecutionPolicy Bypass -File scripts\agendador.ps1 -Acao testar`
 5. Instalar: `powershell -ExecutionPolicy Bypass -File scripts\agendador.ps1 -Acao instalar` (ajuste `-Hora` se o fuso do Windows não for Brasília; o script avisa).
 

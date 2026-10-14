@@ -22,8 +22,15 @@ def checar_portal(url: str, timeout_ms=30000):
         with sync_playwright() as p:
             b = p.chromium.launch(headless=True)
             pg = b.new_page()
-            resp = pg.goto(url, timeout=timeout_ms)
-            texto = pg.inner_text("body")[:20000]
+            resp = pg.goto(url, timeout=timeout_ms, wait_until="domcontentloaded")
+            pg.wait_for_timeout(3000)  # portais com frames/JS (ex.: Projudi) carregam depois
+            texto = ""
+            for f in pg.frames:  # inclui iframes: CAPTCHA costuma estar em frame de terceiros
+                texto += f" {f.url} "
+                try:
+                    texto += f.locator("body").inner_text(timeout=4000)[:20000]
+                except Exception:
+                    pass
             b.close()
         barreira = detectar_barreira(texto)
         if barreira:

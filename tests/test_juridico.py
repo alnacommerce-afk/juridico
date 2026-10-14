@@ -189,6 +189,8 @@ class TestRelatorioETriagem(unittest.TestCase):
     def test_barreira_portal(self):
         self.assertTrue(portais.detectar_barreira("Complete o reCAPTCHA"))
         self.assertIsNone(portais.detectar_barreira("Consulta processual"))
+        # frame de CAPTCHA de terceiro (visto no Projudi/TJBA) deve ser detectado pela URL
+        self.assertTrue(portais.detectar_barreira("https://global.turing.captcha.gtimg.com/template/drag.html"))
 
 
 class TestAgendadorEPrivacidade(unittest.TestCase):
